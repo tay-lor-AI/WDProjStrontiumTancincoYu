@@ -1,5 +1,5 @@
 # project
 
-yeah we're so cool
-
-~~skibidi toilet~~
+- spin the wheel?
+- random music player
+- 
