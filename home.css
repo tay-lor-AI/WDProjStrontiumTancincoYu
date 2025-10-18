@@ -1,0 +1,19 @@
+body
+{
+    background-color: bisque;
+}
+
+h1
+{
+    color:rgb(7, 22, 156);
+    font-size: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+p
+{
+    color: rgba(0, 0, 255, 0.63);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
