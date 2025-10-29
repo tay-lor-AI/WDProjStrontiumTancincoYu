@@ -15,3 +15,23 @@ __Sources__ (Contains sources and citations, also social media links)
 
 __Result Pages__ - Each possible fandom result will have their own seperate webpage. Ideally with no sub-pages
 
+## Wireframes
+Home Page:
+
+![](images/Wireframe/home%20page.png)
+
+How to join a fandom:
+
+![](images/Wireframe/2.png)
+
+Complete list:
+
+![](images/Wireframe/3.png)
+
+Result Pages:
+
+![](images/Wireframe/4.png)
+
+Sources:
+
+![](images/Wireframe/sources.png)
