@@ -1,7 +1,9 @@
 # Fandom Roulette
 > There are always new stories waiting to be found
 
-Favicon: ![](images/favicon.gif)
+Favicon: 
+
+![](images/favicon.gif)
 
 Bored in the summer? Want to take a break from schoolwork? Don't worry! We've got you covered! With the press of a quick button, we can randomly generate a fandom that might interest you, be it a book, show, or game!
 
