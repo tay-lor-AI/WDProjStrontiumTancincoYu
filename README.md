@@ -1,5 +1,5 @@
 # Fandom Roulette
-> There are always new stories waiting to be found
+> Random Reality Roulette (RRR)
 
 Favicon: 
 
