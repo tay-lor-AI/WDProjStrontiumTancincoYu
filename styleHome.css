@@ -42,31 +42,30 @@ p {
     object-fit: cover;
 }
 
-#footer-container
-
-/* i only did like super basic stylings so it looks ugly i think maybe*/
-    {
+#footer-container {
     background-color: rgb(212, 198, 250);
     position: relative;
-    height: 10rem;
-    margin-top: -10rem;
+    height: 7rem;
+    margin-top: -8rem;
     clear: both;
     text-align: center;
-    padding-top: 1rem;
-}
-
-.footer {
+    padding-top: 0.5rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    width: 50%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-heading {
     display: flex;
-    flex-direction: column;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    text-align: left;
+    flex-direction: row;
+    gap: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .footer-heading h2 {
@@ -77,8 +76,8 @@ p {
     font-family: 'Comfortaa';
     color: rgb(91, 42, 165);
     text-decoration: none;
-    margin-bottom: 0rem;
     font-size: 20px;
+    display: inline-block;
 }
 
 .footer-heading a:hover {
@@ -88,13 +87,38 @@ p {
 
 .footer-heading a:active {
     font-weight: bolder;
-    color: rgb(155, 112, 216)
+    color: rgb(155, 112, 216);
 }
 
-.footer-heading.c a {
+.footer-heading.c {
     font-family: 'Comfortaa';
     color: rgb(91, 42, 165);
     text-decoration: none;
     margin-bottom: 0.25rem;
     font-size: 40px;
+}
+
+
+.footer-heading.b {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-heading.b img {
+    width: 100px;
+    height: auto;
+}
+
+.clickeeth {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.clickeeth a:active {
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(91, 42, 165);
+    font-style: none;
 }
