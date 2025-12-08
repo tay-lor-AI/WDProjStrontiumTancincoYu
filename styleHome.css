@@ -1,71 +1,67 @@
-*
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html, body
-{
+html,
+body {
+    overflow: hidden;
     height: 100%;
 }
 
-#container
-{
+#container {
     min-height: 100%;
 }
 
-#main
-{
+#main {
     overflow: auto;
     padding-bottom: 15rem;
 }
 
-h1
-{
-    color:rgb(0, 0, 0);
-    font-size: 70px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1 {
+    font-size: 100px;
+    color: #8b87f2;
+    font-family: 'Comfortaa';
+    text-shadow: -.030em .030em #b4baed, -.08em .08em #dbd7e7;
     font-weight: 100;
     text-align: center;
 }
 
-p
-{
+p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#myVideo 
-{
-    position: fixed;    
+#myVideo {
+    position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%;    
-    min-height: 100%;   
-    z-index: -1;           
-    object-fit: cover;  
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
 
-#footer-container                   /* i only did like super basic stylings so it looks ugly i think maybe*/
-{
-    background-color: peachpuff;
+#footer-container
+
+/* i only did like super basic stylings so it looks ugly i think maybe*/
+    {
+    background-color: rgb(212, 198, 250);
     position: relative;
-    height: 15rem;
-    margin-top: -15rem;
+    height: 10rem;
+    margin-top: -10rem;
     clear: both;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
-.footer
-{
+.footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.footer-heading
-{
+.footer-heading {
     display: flex;
     flex-direction: column;
     margin-right: 5rem;
@@ -73,26 +69,32 @@ p
     text-align: left;
 }
 
-.footer-heading h2
-{
+.footer-heading h2 {
     margin-bottom: 2rem;
 }
 
-.footer-heading a
-{
-    color: brown;
+.footer-heading a {
+    font-family: 'Comfortaa';
+    color: rgb(91, 42, 165);
     text-decoration: none;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0rem;
+    font-size: 20px;
 }
 
-.footer-heading a:hover
-{
-    color: palevioletred;
+.footer-heading a:hover {
+    color: rgb(168, 112, 216);
     font-style: italic;
 }
 
-.footer-heading a:active
-{
+.footer-heading a:active {
     font-weight: bolder;
-    color: palevioletred
+    color: rgb(155, 112, 216)
+}
+
+.footer-heading.c a {
+    font-family: 'Comfortaa';
+    color: rgb(91, 42, 165);
+    text-decoration: none;
+    margin-bottom: 0.25rem;
+    font-size: 40px;
 }
