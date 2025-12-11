@@ -122,3 +122,42 @@ p {
     color: rgb(91, 42, 165);
     font-style: none;
 }
+
+#center-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+#text-container {
+    background: rgba(218, 180, 232, 0.149);
+    backdrop-filter: blur(8px);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(240, 242, 252, 0.2);
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#text-container p {
+    margin-top: 1rem;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#bigbutton {
+    padding: 1rem 2rem;
+    font-size: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#bigbutton:hover {
+    background-color: rgba(250, 180, 255, 0.4);
+    font-size: 45px;
+}
