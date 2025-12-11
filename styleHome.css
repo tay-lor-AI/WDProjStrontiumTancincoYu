@@ -132,32 +132,35 @@ p {
 }
 
 #text-container {
-    background: rgba(218, 180, 232, 0.149);
+    background: rgba(218, 180, 232, 0.05);
     backdrop-filter: blur(8px);
     padding: 2rem 3rem;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(240, 242, 252, 0.2);
+    box-shadow: 0 0 20px rgba(240, 242, 252, 0.05);
     gap: 1.5rem;
     padding-bottom: 1rem;
 }
 
 #text-container p {
     margin-top: 1rem;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Comfortaa';
+    color: rgb(91, 42, 165);
+
 }
 
 #bigbutton {
     padding: 1rem 2rem;
     font-size: 25px;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Comfortaa';
     border-radius: 15px;
     border: none;
     cursor: pointer;
     transition-duration: 0.5s;
+    color: rgb(152, 136, 217);
 }
 
 #bigbutton:hover {
-    background-color: rgba(250, 180, 255, 0.4);
+    background-color: rgba(221, 223, 251, 0.4);
     font-size: 45px;
 }
