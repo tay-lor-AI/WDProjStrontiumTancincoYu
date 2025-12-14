@@ -52,6 +52,13 @@ p {
     margin-top: 1%
 }
 
+.flex-domain2 {
+    display:flex;
+    justify-content: right;
+    column-gap:20em;
+    width: 80%;
+}
+
 .pageList {
     display: flex;
     width: 70em;
