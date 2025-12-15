@@ -49,60 +49,42 @@ p {
 .flex-domain {
     display: flex;
     justify-content: center;
-    margin-top: 1%
+    margin-top: 1%;
+    height: 100%;
 }
 
-.flex-domain2 {
-    display:flex;
-    justify-content: right;
-    column-gap:20em;
-    width: 80%;
-}
-
-.pageList {
-    display: flex;
-    width: 70em;
-    height: 17em;
-    padding: 1.5rem;
-    border-radius: 5%;
-    backdrop-filter: blur(8px);
-    align-items: flex-start;
-    justify-content: space-around;
-    overflow-y: auto;
-    overflow: hidden;
-}
-
-.page-Set {
+.subdomain1
+{
     display: flex;
     flex-direction: column;
-    line-height: 2.1em;
-    font-size: 22px;
-    max-height: 21em;
+    flex-wrap: wrap;
+    row-gap: 10em;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 30%;
 }
 
-.pageList a {
-    color: #57559c
-}
-
-.pageList a:hover {
-    color: #1c0b2c;
-    font-weight: bolder;
-}
-
-.fandomExplain
-{
+.subdomain2 {
     display: flex;
-    backdrop-filter: blur(8px);
-    width: 20em;
-    height: 17em;
+    margin-left: 60%;
 }
 
-.fandomImageExplain
-{
+.item1 {
     display: flex;
+    flex-direction: column;
     backdrop-filter: blur(8px);
-    width: 20em;
-    height: 17em;
+    width: 40%;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+    width: 40%;
+}
+
+.item3 {
+    display: flex;
 }
 
 #footer-container {
