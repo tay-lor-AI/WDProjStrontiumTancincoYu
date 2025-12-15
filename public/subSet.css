@@ -99,6 +99,8 @@ p {
     flex-direction: column;
     row-gap: 2em;
     flex-wrap: wrap;
+    overflow-y: auto;
+    height: 30em;
     border-radius: 5%;
 }
 
