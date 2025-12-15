@@ -60,7 +60,6 @@ p {
     flex-wrap: wrap;
     row-gap: 10em;
     width: 70%;
-    margin-top: 5%;
     margin-left: 30%;
 }
 
@@ -74,6 +73,7 @@ p {
     flex-direction: column;
     backdrop-filter: blur(8px);
     width: 40%;
+    margin-top: 5%;
 }
 
 .item2 {
