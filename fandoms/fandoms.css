@@ -20,7 +20,7 @@ body {
 
 #main {
     overflow: auto;
-    padding-bottom: 15rem;
+    padding-bottom: 8rem;
 }
 
 h1 {
@@ -53,8 +53,7 @@ p {
     height: 100%;
 }
 
-.subdomain1
-{
+.subdomain1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -75,7 +74,7 @@ p {
     overflow: auto;
     position: absolute;
     left: 38%;
-    top:  55%;
+    top: 55%;
 }
 
 .item2 {
