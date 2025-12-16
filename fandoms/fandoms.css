@@ -58,8 +58,8 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 10em;
-    width: 70%;
-    margin-left: 30%;
+    width: 90%;
+    margin-left: 20%;
 }
 
 .subdomain2 {
@@ -69,23 +69,37 @@ p {
 
 .item1 {
     display: flex;
-    width: 600px;
-    height: 300px;
+    width: 580px;
+    height: 200px;
+    backdrop-filter: blur(8px);
+    width: 400px;
+    height: 150px;
+    margin-top: 1%;
+    padding: 1em;
     overflow: auto;
+    flex-wrap: wrap;
+    overflow-y: auto;
     position: absolute;
-    left: 38%;
-    top: 55%;
+    border-radius: 10px;
 }
 
 .item2 {
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(8px);
-    width: 40%;
+    width: 580px;
+    height: 150px;
+    margin-top: 16%;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    padding: 1em;
+    border-radius: 10px;
 }
 
-.item3 {
-    display: flex;
+.image1 {
+    position: absolute;
+    left: 60%;
+    top: 20%;
 }
 
 #footer-container {
