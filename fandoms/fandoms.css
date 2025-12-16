@@ -69,6 +69,7 @@ p {
 
 .item1 {
     display: flex;
+    flex-direction: column;
     width: 580px;
     height: 150px;
     backdrop-filter: blur(8px);
@@ -92,12 +93,14 @@ p {
     overflow-y: auto;
     padding: 1em;
     border-radius: 10px;
+    flex-direction: column;
 }
 
 .image1 {
     position: absolute;
-    left: 60%;
+    left: 65%;
     top: 20%;
+    padding: 1em;
 }
 
 #footer-container {
