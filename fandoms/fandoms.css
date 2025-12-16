@@ -72,8 +72,6 @@ p {
     width: 580px;
     height: 200px;
     backdrop-filter: blur(8px);
-    width: 400px;
-    height: 150px;
     margin-top: 1%;
     padding: 1em;
     overflow: auto;
