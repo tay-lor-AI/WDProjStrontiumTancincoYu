@@ -23,7 +23,20 @@
             <button id="bigbutton">ROLL</button>
             <p id="message">Tap the ROLL button to find a new Fandom!</p>
             <script>
+                const Pages = [
+                    "../fandoms/fnaf.html",
+                    "../fandoms/jjk.html",
+                    "../fandoms/magnusChase.html",
+                    "../fandoms/soImASpider.html",
+                    // add other pages yknw
+                ];
 
+                rollButton = document.getElementById("bigbutton");
+
+                rollButton.addEventListener("click", () => {
+                    randomIndex = Math.floor(Math.random() * Pages.length);
+                    window.location.href = Pages[randomIndex];
+                })
             </script>
         </div>
     </div>
