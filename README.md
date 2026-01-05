@@ -10,7 +10,7 @@
 
 ## Details
 - The form will be accessible in the Navigation Bar, titled Suggest Box
-- The data will be collected [PELASE FINISH THIS SOONER OR LATER EMMA DONT BE STUPID]
+- The data will be collected and utilized to create new fandom websites, at the discretion of the website creators
 
 ## Definition of Done
 
