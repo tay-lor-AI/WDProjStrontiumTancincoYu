@@ -65,8 +65,20 @@ p {
 
 .pageList {
     display: flex;
+    width: 80em;
+    height: 30em;
+    padding: 1.5rem;
+    border-radius: 5%;
+    backdrop-filter: blur(8px);
+    align-items: flex-start;
+    justify-content: space-around;
+    overflow-y: auto;
+}
+
+.sourceList {
+    display: flex;
     width: 75em;
-    height: 17em;
+    height: 20em;
     padding: 1.5rem;
     border-radius: 5%;
     backdrop-filter: blur(8px);
@@ -84,6 +96,10 @@ p {
 }
 
 .pageList a {
+    color: #57559c
+}
+
+.sourceList a {
     color: #57559c
 }
 
