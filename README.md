@@ -1,3 +1,23 @@
+# Q3 Proposal Update
+
+## Final Title: fandom roulette
+
+## Features
+1. Uses JavaScript to randomize possible fandom results
+2. Allows users to suggest fandoms to add to the website
+3. Users can rate fandoms, and all ratings will be compiled and presented in each webpage
+4. Compatible with both phone and laptop
+
+## Details
+- The form will be accessible in the Navigation Bar, titled Suggest Box
+- The data will be collected [PELASE FINISH THIS SOONER OR LATER EMMA DONT BE STUPID]
+
+## Definition of Done
+
+Has at minimum 30 different fandom websites, has a working log-in system which allows users to rate each fandom, and there is a functioning user-input form.
+
+---
+
 # Fandom Roulette
 > Random Reality Roulette (RRR)
 
