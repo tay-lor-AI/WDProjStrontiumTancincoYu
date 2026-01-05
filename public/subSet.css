@@ -96,7 +96,7 @@ p {
     display: flex;
     backdrop-filter: blur(8px);
     padding: 3rem;
-    margin-left: 12%;
+    margin-left: 15%;
     width: 700px;
     height: 280px;
     flex-direction: column;
