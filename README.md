@@ -16,6 +16,14 @@
 
 Has at minimum 30 different fandom websites, has a working log-in system which allows users to rate each fandom, and there is a functioning user-input form.
 
+Suggestion box
+![](images/Wireframe/7.png)
+
+Suggestions List
+![](images/Wireframe/8.png)
+
+New Fandom Suggestions
+![](images/Wireframe/Wireframe.png)
 ---
 
 # Fandom Roulette
