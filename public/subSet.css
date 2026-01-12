@@ -112,7 +112,7 @@ p {
 .sourceList a {
     color: #57559c;
     font-family: 'Montserrat';
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .pageList a:hover {
