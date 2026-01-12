@@ -3,6 +3,11 @@
     src: url('../images/WorkSans-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../images/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -38,14 +43,14 @@ h1 {
 }
 
 p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat';
 }
 
 #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%;
+    min-width: 100%;    
     min-height: 100%;
     z-index: -1;
     object-fit: cover;
@@ -95,12 +100,19 @@ p {
     max-height: 21em;
 }
 
+p {
+    font-family: 'Montserrat';
+}
 .pageList a {
-    color: #57559c
+    color: #57559c;
+    font-family: 'Montserrat';
+    font-size: 1rem;
 }
 
 .sourceList a {
-    color: #57559c
+    color: #57559c;
+    font-family: 'Montserrat';
+    font-size: 1em;
 }
 
 .pageList a:hover {
@@ -153,7 +165,7 @@ p {
 }
 
 .footer-heading a {
-    font-family: 'Comfortaa';
+    font-family: 'Montserrat';
     color: rgb(91, 42, 165);
     text-decoration: none;
     font-size: 20px;
@@ -171,7 +183,7 @@ p {
 }
 
 .footer-heading.c {
-    font-family: 'Comfortaa';
+    font-family: 'Montserrat';
     color: rgb(91, 42, 165);
     text-decoration: none;
     margin-bottom: 0.25rem;
