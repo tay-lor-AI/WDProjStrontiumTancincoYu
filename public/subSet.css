@@ -8,6 +8,10 @@
     src: url('../images/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face{ 
+    font-family:'Space Grotesk';
+    src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+}
 * {
     padding: 0;
     margin: 0;
@@ -226,4 +230,29 @@ p {
     font-size: 25px;
     color: rgb(91, 42, 165);
     font-style: none;
+}
+
+.form-content label,
+.form-content select,
+.form-content p {
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Space Grotesk';
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-family: 'Space Grotesk';
+}
+
+.form-content label {
+    min-width: 120px;
+    font-family: 'Space Grotesk';
+}
+
+.formy input{
+    font-family: 'Space Grotesk', sans-serif;
 }
