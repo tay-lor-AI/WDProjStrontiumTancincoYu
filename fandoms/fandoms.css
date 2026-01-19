@@ -35,7 +35,7 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 6em;
     color: #8b87f2;
     font-family: 'Work Sans';
     text-shadow: -.030em .030em #b4baed, -.08em .08em #dbd7e7;
@@ -57,12 +57,6 @@ p {
     object-fit: cover;
 }
 
-.flex-domain {
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-}
-
 .subdomain1 {
     display: flex;
     flex-direction: column;
@@ -76,6 +70,8 @@ p {
     margin-left: 60%;
 }
 
+
+
 .item1 {
     display: flex;
     flex-direction: column;
@@ -84,7 +80,6 @@ p {
     backdrop-filter: blur(8px);
     margin-top: 1%;
     padding: 1em;
-    overflow: auto;
     flex-wrap: wrap;
     overflow-y: auto;
     position: absolute;
@@ -102,7 +97,6 @@ p {
     overflow-y: auto;
     padding: 1em;
     border-radius: 10px;
-    flex-direction: column;
 }
 
 .image1 {
@@ -124,10 +118,11 @@ p {
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 50vw;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .footer-heading {
@@ -161,34 +156,24 @@ p {
 }
 
 .footer-heading.c {
+    display: flex;
     font-family: 'Montserrat';
     color: rgb(91, 42, 165);
     text-decoration: none;
     margin-bottom: 0.25rem;
     font-size: 40px;
+
 }
 
 
 .footer-heading.b {
     position: absolute;
-    top: -40px;
+    top: -2.8em;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .footer-heading.b img {
-    width: 100px;
+    width: 5.5em;
     height: auto;
-}
-
-.clickeeth {
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.clickeeth a:active {
-    font-weight: bolder;
-    font-size: 25px;
-    color: rgb(91, 42, 165);
-    font-style: none;
 }
