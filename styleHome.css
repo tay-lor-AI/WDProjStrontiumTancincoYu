@@ -7,7 +7,7 @@
         font-family: 'Montserrat';
         src: url('images/Montserrat-VariableFont_wght.ttf') format('truetype');
     }
-    
+
     * {
         padding: 0;
         margin: 0;
@@ -56,86 +56,6 @@
         object-fit: cover;
     }
 
-    #footer-container {
-        background-color: rgb(212, 198, 250);
-        position: relative;
-        height: 7rem;
-        margin-top: -8rem;
-        clear: both;
-        text-align: center;
-        padding-top: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 1rem;
-        width: 50%;
-        border-radius: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footer-heading {
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .footer-heading h2 {
-        margin-bottom: 2rem;
-    }
-
-    .footer-heading a {
-        font-family: 'Montserrat';
-        color: rgb(91, 42, 165);
-        text-decoration: none;
-        font-size: 20px;
-        display: inline-block;
-    }
-
-    .footer-heading a:hover {
-        color: rgb(168, 112, 216);
-        font-style: italic;
-    }
-
-    .footer-heading a:active {
-        font-weight: bolder;
-        color: rgb(155, 112, 216);
-    }
-
-    .footer-heading.c {
-        font-family: 'Montserrat';
-        color: rgb(91, 42, 165);
-        text-decoration: none;
-        margin-bottom: 0.25rem;
-        font-size: 40px;
-    }
-
-
-    .footer-heading.b {
-        position: absolute;
-        top: -40px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .footer-heading.b img {
-        width: 100px;
-        height: auto;
-    }
-
-    .clickeeth {
-        font-weight: bolder;
-        font-size: 25px;
-    }
-
-    .clickeeth a:active {
-        font-weight: bolder;
-        font-size: 25px;
-        color: rgb(91, 42, 165);
-        font-style: none;
-    }
 
     #center-box {
         position: absolute;

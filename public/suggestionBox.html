@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="../images/favicon.gif">
     <link rel="stylesheet" href="subSet.css">
+    <link rel="stylesheet" href="../footer.css">
     <title>Suggestion Box</title>
     <meta name="description" content="How to Fandom (???)">
     <meta name="Xian, Emma" content="YuStrontium29, tay-lor-AI">
@@ -21,44 +22,49 @@
             </video>
             <div class="flex-domain">
                 <div class="formy">
-                    <form>
+                    <form method="post" action="#">
+
                         <div class="form-content">
                             <label for="username">(Optional) Name:</label>
-                            <input type="text" class="inputy" id="username" name="username" placeholder="Type Name/Username">
+                            <input type="text" class="inputy" id="username" name="username"
+                                placeholder="Type Name/Username">
                         </div>
 
                         <div class="form-content">
                             <label for="fname">Fandom Name:</label>
-                            <input type="text" class="inputy" id="fname" name="fname" required placeholder="Type in Fandom Name">
+                            <input type="text" class="inputy" id="fname" name="fname" required
+                                placeholder="Type in Fandom Name">
                         </div>
 
-                        <label for="description">Reason for Joining:</label>
-                        <textarea class="inputy" id="description" name="description" rows="4" maxlength="500"
-                            placeholder="Why do you want to apply?"></textarea>
-                        
+                        <div class="form-content">
+                            <label for="description">Reason for Joining:</label>
+                            <textarea class="inputy" id="description" name="description" rows="4" maxlength="500"
+                                placeholder="Why do you want to apply?"></textarea>
+                        </div>
+
                         <input type="submit" value="Submit" class="buttonr"
-                    onclick="return confirm('Are you sure you want to submit?');">
+                            onclick="return confirm('Are you sure you want to submit?');">
                     </form>
                 </div>
-    </div>
+            </div>
 
-    <footer id="footer-container">
-        <div class="footer">
-            <div class="footer-heading a">
-            </div>
-            <div class="footer-heading b">
-                <p><a href="../home.html">
-                        <img class="favicon" src="../images/favicon.gif" alt="favicon">
-                    </a></p>
-            </div>
-            <div class="footer-heading c">
-                <a href="sourcesAndSocials.html">Sources and Socials</a>
-                <a href=" howToFandom.html">How to Fandom</a>
-                <a href=" completeList.html">Complete List</a>
-                <a class="clickeeth" href="">Suggestion Box</a>
-            </div>
-        </div>
-    </footer>
+            <footer id="footer-container">
+                <div class="footer">
+                    <div class="footer-heading a">
+                    </div>
+                    <div class="footer-heading b">
+                        <p><a href="../home.html">
+                                <img class="favicon" src="../images/favicon.gif" alt="favicon">
+                            </a></p>
+                    </div>
+                    <div class="footer-heading c">
+                        <a href="sourcesAndSocials.html">Sources and Socials</a>
+                        <a href=" howToFandom.html">How to Fandom</a>
+                        <a href=" completeList.html">Complete List</a>
+                        <a class="clickeeth" href="">Suggestion Box</a>
+                    </div>
+                </div>
+            </footer>
 
 </body>
 
