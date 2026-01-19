@@ -21,6 +21,24 @@
             </video>
             <div class="flex-domain">
                 <div class="formy">
+                    <form>
+                        <div class="form-content">
+                            <label for="username">(Optional) Name:</label>
+                            <input type="text" class="inputy" id="username" name="username" placeholder="Type Name/Username">
+                        </div>
+
+                        <div class="form-content">
+                            <label for="fname">Fandom Name:</label>
+                            <input type="text" class="inputy" id="fname" name="fname" required placeholder="Type in Fandom Name">
+                        </div>
+
+                        <label for="description">Reason for Joining:</label>
+                        <textarea class="inputy" id="description" name="description" rows="4" maxlength="500"
+                            placeholder="Why do you want to apply?"></textarea>
+                        
+                        <input type="submit" value="Submit" class="buttonr"
+                    onclick="return confirm('Are you sure you want to submit?');">
+                    </form>
                 </div>
     </div>
 
