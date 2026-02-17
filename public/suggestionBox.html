@@ -7,15 +7,21 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.gif">
     <link rel="stylesheet" href="subSet.css">
     <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Suggestion Box</title>
     <meta name="description" content="How to Fandom (???)">
     <meta name="Xian, Emma" content="YuStrontium29, tay-lor-AI">
 </head>
 
+
 <body>
 
     <div id="container">
         <div id="main">
+
+            <!-- website title + background -->
             <h1>suggestion box</h1>
             <video class="myVideo" autoplay muted loop id="myVideo">
                 <source src="../homeBackground.mp4" type="video/mp4">
@@ -23,12 +29,14 @@
             <div class="flex-domain">
                 <div class="formy">
 
+                    <!-- headers -->
                     <div class="form-header">
                         <h2 class="form-title">suggest a fandom!</h2>
-                        <!--<a href="suggestions.html" class="small-button">All Suggestions</a> -->
+                        <a href="suggestions.html" class="small-button">view suggestions</a>
                     </div>
 
-                    <form method="post" action="#">
+                    <!-- form -->
+                    <form id="suggestionForm">
 
                         <div class="form-content">
                             <label for="username">(Optional) Name:</label>
@@ -48,8 +56,9 @@
                                 placeholder="Type in Fandom Description"></textarea>
                         </div>
 
-                        <input type="submit" value="Submit" class="buttonr"
-                            onclick="return confirm('Are you sure you want to submit?');">
+                        <button type="submit" class="small-button">
+                            Submit
+                        </button>
                     </form>
                 </div>
             </div>
@@ -71,7 +80,43 @@
                     </div>
                 </div>
             </footer>
+            <!-- cloud storage -->
+            <script type="module">
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+                import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
+                const firebaseConfig = {
+                    apiKey: "AIzaSyCY9gcgkSC6_PrS2WLWX_PipjTyAt-vHNA",
+                    authDomain: "fandom-suggestion-box.firebaseapp.com",
+                    projectId: "fandom-suggestion-box",
+                    storageBucket: "fandom-suggestion-box.firebasestorage.app",
+                    messagingSenderId: "1021637275253",
+                    appId: "1:1021637275253:web:fc9bf456512efbee51123c"
+                };
+
+                const app = initializeApp(firebaseConfig);
+                const db = getFirestore(app);
+
+                const form = document.querySelector("form");
+
+                form.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+
+                    const username = document.getElementById("username").value;
+                    const fandom = document.getElementById("fname").value;
+                    const description = document.getElementById("description").value;
+
+                    await addDoc(collection(db, "suggestions"), {
+                        username: username,
+                        fandom: fandom,
+                        description: description,
+                        timestamp: new Date()
+                    });
+
+                    alert("Suggestion submitted!");
+                    form.reset();
+                });
+            </script>
 </body>
 
 </html>
