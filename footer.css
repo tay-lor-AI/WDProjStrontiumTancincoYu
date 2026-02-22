@@ -86,13 +86,15 @@
  @media (max-width: 768px) {
 
      #footer-container {
-         height: auto;
+         height: 12rem;
          padding: 0.7rem 1rem;
      }
 
-     .footer-heading.c {
+     .footer-heading.c 
+     {
          font-size: 13px;
-         gap: 0.7rem;
+         gap: 2rem;
+         flex-direction: column;
      }
 
      .footer-heading.b img {

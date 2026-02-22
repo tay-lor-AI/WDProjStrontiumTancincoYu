@@ -80,7 +80,6 @@
         margin-top: 1rem;
         font-family: 'Montserrat';
         color: rgb(91, 42, 165);
-
     }
 
     #bigbutton {
@@ -98,3 +97,11 @@
         background-color: rgba(221, 223, 251, 0.4);
         font-size: 45px;
     }
+
+          @media screen and (max-width: 1024px) 
+      {
+        h1 
+        {
+            font-size:50px;
+        }
+      }

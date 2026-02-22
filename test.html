@@ -15,7 +15,15 @@
 
 <body>
     
-    <section class="hero is-fullheight video">
+    <section class="hero is-fullheight is-transparent">
+
+        <div class="hero-head">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title">fandom roulette</h1>
+                </div>
+            </div>
+        </div>
 
 
         <div class="hero-video">
@@ -24,17 +32,73 @@
             </video>
 
             <video class="heroVideoMobile" playsinline autoplay loop muted>
-                <source src="mobile-video.mp4" type="video/mp4">
+                <source src="mobileHomeBackground.mp4" type="video/mp4">
             </video>
         </div>
 
         <div class="hero-body">
             <div class="container">
-                <h1>balls</h1>
+                <div class="heroBodyContainer">
+                    <div class="columns is-centered has-text-centered">
+                        <button id="bigbutton">ROLL</button>
+                        <script>
+                            const Pages = [
+                                "./fandoms/fnaf.html",
+                                ".fandoms/jjk.html",
+                                "./fandoms/magnusChase.html",
+                                "./fandoms/soImASpider.html",
+                                "./fandoms/isat.html",
+                                "./fandoms/hollowSkong.html",
+                                "./fandoms/worm.html",
+                                "./fandoms/genshin.html",
+                                "./fandoms/cookieRun.html",
+                                "./fandoms/criticalRole.html",
+                                "./fandoms/pjo.html",
+                                "./fandoms/helloCharlotte.html",
+                                "./fandoms/hermitcraft.html",
+                                "./fandoms/psychopomp.html",
+                            ];
+
+                            rollButton = document.getElementById("bigbutton");
+
+                            rollButton.addEventListener("click", () => {
+                                randomIndex = Math.floor(Math.random() * Pages.length);
+                                window.location.href = Pages[randomIndex];
+                            })
+                        </script>
+                    </div>
+                    <div class="columns is-centered has-text-centered">
+                        <p id="message">Tap the ROLL button to find a new Fandom!</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-
+        <div class="hero-foot">
+            <footer id="footer-housing">
+                <div class="container">
+                    <div class="container">
+                        <div class="columns is-mobile is-centered">
+                            <p>pee</p>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile is-centered">
+                        <div class="column has-text-centered">
+                            <p>hi</p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <p>hi</p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <p>hi</p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <p>hi</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
     </section>
 
