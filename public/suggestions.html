@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../footer.css">
 
     <style>
+        /* why is the style here -xian */
         /* SCROLL AREA */
         .scroll-container {
             display: flex;
@@ -61,6 +62,21 @@
             background: rgba(139, 135, 242, 0.5);
             border-radius: 10px;
         }
+        
+        /*mobile ing it */
+        @media (max-width: 1024px) 
+        {
+            .scroll-container
+            {
+                flex-direction: column;
+            }
+            .suggestion-card
+            {
+                max-width: 320px;
+                min-width: 280px;
+            }
+        }
+
     </style>
 </head>
 

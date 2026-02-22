@@ -69,28 +69,6 @@
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    .formy {
-        width: 90vw;
-        max-height: 75vh;
-        padding: 1.5rem;
-    }
-
-    .form-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .form-content label {
-        min-width: unset;
-    }
-}
-
 .formy {
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -110,4 +88,41 @@
 .small-button:hover {
     background-color: rgba(221, 223, 251, 0.4);
     transform: scale(1.1);
+}
+
+.suggestsView
+{
+    backdrop-filter: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 15px;
+    background-color: rgba(221, 223, 251, 0.4);
+}
+
+.suggestsView:hover
+{
+    transition: 0.4s ease;
+    background-color: rgb(152, 136, 217);
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .formy {
+        width: 90vw;
+        max-height: 75vh;
+        padding: 1.5rem;
+    }
+
+    .form-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-content label {
+        min-width: unset;
+    }
 }
