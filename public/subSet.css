@@ -1,160 +1,173 @@
-@font-face {
-    font-family: 'Work Sans';
-    src: url('../images/WorkSans-VariableFont_wght.ttf') format('truetype');
-}
+    @font-face {
+        font-family: 'Work Sans';
+        src: url('../images/WorkSans-VariableFont_wght.ttf') format('truetype');
+    }
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../images/Montserrat-VariableFont_wght.ttf') format('truetype');
-}
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../images/Montserrat-VariableFont_wght.ttf') format('truetype');
+    }
 
-@font-face {
-    font-family: 'Space Grotesk';
-    src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-}
+    @font-face {
+        font-family: 'Space Grotesk';
+        src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    }
 
 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-a {
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
-html,
-body {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
+    html,
+    body {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
 
-#container {
-    min-height: 100%;
-}
+    #container {
+        min-height: 100%;
+    }
 
-#main {
-    height: 100vh;
-    overflow: hidden;
-    padding-bottom: 7rem;
-}
+    #main {
+        height: 100vh;
+        overflow: hidden;
+        padding-bottom: 7rem;
+    }
 
-h1 {
-    font-size: 100px;
-    color: #8b87f2;
-    font-family: 'Work Sans';
-    text-shadow: -.030em .030em #b4baed, -.08em .08em #dbd7e7;
-    font-weight: 1000;
-    text-align: center;
-}
+    h1 {
+        font-size: 100px;
+        color: #8b87f2;
+        font-family: 'Work Sans';
+        text-shadow: -.030em .030em #b4baed, -.08em .08em #dbd7e7;
+        font-weight: 1000;
+        text-align: center;
+    }
 
-p {
-    font-family: 'Montserrat';
-}
+    p {
+        font-family: 'Montserrat';
+    }
 
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
-}
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
 
-.flex-domain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 20rem);
-}
+    .flex-domain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 20rem);
+    }
 
-.flex-domain2 {
-    display: flex;
-    column-gap: 7em;
-    margin-top: 0.5em;
-}
+    .flex-domain2 {
+        display: flex;
+        column-gap: 7em;
+        margin-top: 0.5em;
+    }
 
-.pageList {
-    display: flex;
-    width: 80em;
-    height: 30em;
-    padding: 1.5rem;
-    border-radius: 5%;
-    backdrop-filter: blur(8px);
-    align-items: flex-start;
-    justify-content: space-around;
-    overflow-y: auto;
-}
+    .pageList {
+        display: flex;
+        width: 80em;
+        height: 30em;
+        padding: 1.5rem;
+        border-radius: 5%;
+        backdrop-filter: blur(8px);
+        align-items: flex-start;
+        justify-content: space-around;
+        overflow-y: auto;
+    }
 
-.sourceList {
-    display: flex;
-    width: 75em;
-    height: 20em;
-    padding: 1.5rem;
-    border-radius: 5%;
-    backdrop-filter: blur(8px);
-    align-items: flex-start;
-    justify-content: space-around;
-    overflow-y: auto;
-}
+    .sourceList {
+        display: flex;
+        width: 75em;
+        height: 20em;
+        padding: 1.5rem;
+        border-radius: 5%;
+        backdrop-filter: blur(8px);
+        align-items: flex-start;
+        justify-content: space-around;
+        overflow-y: auto;
+    }
 
-.page-Set {
-    display: flex;
-    flex-direction: column;
-    line-height: 2.1em;
-    font-size: 22px;
-    max-height: 21em;
-}
+    .page-Set {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.1em;
+        font-size: 22px;
+        max-height: 21em;
+    }
 
-.formy {
-    width: min(90vw, 800px);
-    height: auto;
-    max-height: 60vh;
-    padding: 1.5rem;
-    border-radius: 24px;
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    overflow-y: auto;
-}
+    .formy {
+        width: min(90vw, 800px);
+        height: auto;
+        max-height: 60vh;
+        padding: 1.5rem;
+        border-radius: 24px;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        overflow-y: auto;
+    }
 
-p {
-    font-family: 'Montserrat';
-}
+    p {
+        font-family: 'Montserrat';
+    }
 
-.pageList a {
-    color: #57559c;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-}
+    .pageList a {
+        color: #57559c;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+    }
 
-.sourceList a {
-    color: #57559c;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-}
+    .sourceList a {
+        color: #57559c;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+    }
 
-.pageList a:hover {
-    color: #1c0b2c;
-    font-weight: bolder;
-}
+    .pageList a:hover {
+        color: #1c0b2c;
+        font-weight: bolder;
+    }
 
-.fandomExplain {
-    display: flex;
-    backdrop-filter: blur(8px);
-    padding: 3rem;
-    margin-left: 15%;
-    width: 700px;
-    height: 280px;
-    flex-direction: column;
-    row-gap: 2em;
-    flex-wrap: wrap;
-    overflow-y: auto;
-    border-radius: 5%;
-}
+    .fandomExplain {
+        display: flex;
+        backdrop-filter: blur(8px);
+        padding: 3rem;
+        margin-left: 15%;
+        width: 700px;
+        height: 280px;
+        flex-direction: column;
+        row-gap: 2em;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        border-radius: 5%;
+    }
+
+    @media screen and (max-width: 1024px) 
+    {
+        .sourceList
+        {
+            flex-direction: column;
+        }
+        h1 
+        {
+            font-size: 50px;
+        }
+
+    }
