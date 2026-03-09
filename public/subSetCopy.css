@@ -161,9 +161,17 @@
     .favispin {
         width: 80px;
         height: auto;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
+
+        .hero-head h1 {
+            font-size: 50px;
+        }
 
         .heroVideoDesktop {
             display: none;
@@ -181,8 +189,12 @@
             font-size: 60px;
         }
 
-
         #footer-housing {
             height: 12rem;
+        }
+
+        .favispin {
+            top: -60px;
+            width: 65px;
         }
     }
