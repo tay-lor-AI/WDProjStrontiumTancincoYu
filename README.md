@@ -1,3 +1,73 @@
+# Final Proposal
+
+## Fandom Roulette
+Want to find new content to dip your fingers in? We've got you covered! With the press of a quick button, we can randomly generate a fandom that might interest you, be it a book, show, or game!
+
+This project is for anyone who wants to find new and interesting media, or to branch out their interests. They would love this project since it allows them to find newer fandoms with just one button, rather than having to do it manually.
+
+This project features
+- A completely random experience based on the click of a button
+- Lists of suggestions from other users
+- A suggestion box that you can add your own fandoms in
+- Mobile Compatibility
+
+
+and does not feature
+- any spoilers for any of the fandoms!
+- calculator
+- world map
+
+Submitted By Emma Noelle M. Tancinco and Xian Elric C. Yu on 18 March 2026 to Sir Roy Vincent Canseco in partial fulfillment of the requiements in CS3 of DOST-PSHS-MC
+
+
+
+## Wireframes
+Home Page:
+
+![](images/Wireframe/home%20page.png)
+
+How to join a fandom:
+
+![](images/Wireframe/2.png)
+
+Complete list:
+
+![](images/Wireframe/3.png)
+
+Result Pages:
+
+![](images/Wireframe/4.png)
+
+Sources:
+
+![](images/Wireframe/sources.png)
+
+Suggestion box
+![](images/Wireframe/7.png)
+
+Suggestions List
+![](images/Wireframe/8.png)
+
+New Fandom Suggestions
+![](images/Wireframe/Wireframe.png)
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Q3 Proposal Update
 
 ## Final Title: fandom roulette
