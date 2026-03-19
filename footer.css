@@ -13,6 +13,7 @@
      align-items: flex-end;
      padding-bottom: 0.8rem;
      z-index: 10;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
  }
 
 
@@ -90,8 +91,7 @@
          padding: 0.7rem 1rem;
      }
 
-     .footer-heading.c 
-     {
+     .footer-heading.c {
          font-size: 13px;
          gap: 2rem;
          flex-direction: column;

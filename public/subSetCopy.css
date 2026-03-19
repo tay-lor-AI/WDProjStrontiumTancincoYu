@@ -1,6 +1,6 @@
     @font-face {
         font-family: 'Work Sans';
-        src: url('../images/WorkSans-VariableFont_wght.ttf') format('truetype');
+        src: url('../images/BILLO___.TTF') format('truetype');
     }
 
     @font-face {
@@ -185,7 +185,7 @@
             display: inline !important;
         }
 
-        3 .hero-head h1 {
+        .hero-head h1 {
             font-size: 60px;
         }
 

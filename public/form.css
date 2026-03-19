@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Work Sans';
-    src: url('../images/WorkSans-VariableFont_wght.ttf') format('truetype');
+    src: url('../images/BILLO___.TTF') format('truetype');
 }
 
 @font-face {
@@ -67,6 +67,7 @@
     font-size: 4rem;
     color: #8b87f2;
     font-weight: 700;
+
 }
 
 .formy {
@@ -90,16 +91,16 @@
     transform: scale(1.1);
 }
 
-.suggestsView
-{
+.suggestsView {
     backdrop-filter: none;
     padding: 0.7rem 1.5rem;
     border-radius: 15px;
     background-color: rgba(221, 223, 251, 0.4);
+
+
 }
 
-.suggestsView:hover
-{
+.suggestsView:hover {
     transition: 0.4s ease;
     background-color: rgb(152, 136, 217);
     transform: scale(1.1);
