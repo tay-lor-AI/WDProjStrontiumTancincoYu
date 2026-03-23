@@ -1,13 +1,13 @@
     @font-face {
         font-family: 'Work Sans';
-        src: url('images/WorkSans-VariableFont_wght.ttf') format('truetype');
+        src: url('images/BILLO___.TTF') format('truetype');
     }
 
     @font-face {
         font-family: 'Montserrat';
         src: url('images/Montserrat-VariableFont_wght.ttf') format('truetype');
     }
-    
+
     * {
         padding: 0;
         margin: 0;
@@ -34,12 +34,13 @@
     }
 
     h1 {
-        font-size: 100px;
+        font-size: 110px;
         color: #8b87f2;
         font-family: 'Work Sans';
         text-shadow: -.030em .030em #b4baed, -.08em .08em #dbd7e7;
         font-weight: 1000;
         text-align: center;
+        margin-top: 2rem;
     }
 
     p {
@@ -56,86 +57,6 @@
         object-fit: cover;
     }
 
-    #footer-container {
-        background-color: rgb(212, 198, 250);
-        position: relative;
-        height: 7rem;
-        margin-top: -8rem;
-        clear: both;
-        text-align: center;
-        padding-top: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 1rem;
-        width: 50%;
-        border-radius: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footer-heading {
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .footer-heading h2 {
-        margin-bottom: 2rem;
-    }
-
-    .footer-heading a {
-        font-family: 'Montserrat';
-        color: rgb(91, 42, 165);
-        text-decoration: none;
-        font-size: 20px;
-        display: inline-block;
-    }
-
-    .footer-heading a:hover {
-        color: rgb(168, 112, 216);
-        font-style: italic;
-    }
-
-    .footer-heading a:active {
-        font-weight: bolder;
-        color: rgb(155, 112, 216);
-    }
-
-    .footer-heading.c {
-        font-family: 'Montserrat';
-        color: rgb(91, 42, 165);
-        text-decoration: none;
-        margin-bottom: 0.25rem;
-        font-size: 40px;
-    }
-
-
-    .footer-heading.b {
-        position: absolute;
-        top: -40px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .footer-heading.b img {
-        width: 100px;
-        height: auto;
-    }
-
-    .clickeeth {
-        font-weight: bolder;
-        font-size: 25px;
-    }
-
-    .clickeeth a:active {
-        font-weight: bolder;
-        font-size: 25px;
-        color: rgb(91, 42, 165);
-        font-style: none;
-    }
 
     #center-box {
         position: absolute;
@@ -154,13 +75,13 @@
         box-shadow: 0 0 20px rgba(240, 242, 252, 0.05);
         gap: 1.5rem;
         padding-bottom: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     #text-container p {
         margin-top: 1rem;
         font-family: 'Montserrat';
         color: rgb(91, 42, 165);
-
     }
 
     #bigbutton {
@@ -177,4 +98,10 @@
     #bigbutton:hover {
         background-color: rgba(221, 223, 251, 0.4);
         font-size: 45px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        h1 {
+            font-size: 80px;
+        }
     }

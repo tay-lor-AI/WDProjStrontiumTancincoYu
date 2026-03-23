@@ -6,60 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="../images/favicon.gif">
     <link rel="stylesheet" href="subSet.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Suggestion Box</title>
     <meta name="description" content="How to Fandom (???)">
     <meta name="Xian, Emma" content="YuStrontium29, tay-lor-AI">
 </head>
 
+
 <body>
 
     <div id="container">
         <div id="main">
+
+            <!-- website title + background -->
             <h1>suggestion box</h1>
             <video class="myVideo" autoplay muted loop id="myVideo">
                 <source src="../homeBackground.mp4" type="video/mp4">
             </video>
             <div class="flex-domain">
                 <div class="formy">
-                    <form>
+
+                    <!-- headers -->
+                    <div class="form-header">
+                        <h2 class="form-title">suggest a fandom!</h2>
+                        <a href="suggestions.html" class="suggestsView">view suggestions</a>
+                    </div>
+
+                    <!-- form -->
+                    <form id="suggestionForm">
+
                         <div class="form-content">
                             <label for="username">(Optional) Name:</label>
-                            <input type="text" class="inputy" id="username" name="username" placeholder="Type Name/Username">
+                            <input type="text" class="inputy" id="username" name="username"
+                                placeholder="Type Name/Username">
                         </div>
 
                         <div class="form-content">
                             <label for="fname">Fandom Name:</label>
-                            <input type="text" class="inputy" id="fname" name="fname" required placeholder="Type in Fandom Name">
+                            <input type="text" class="inputy" id="fname" name="fname" required
+                                placeholder="Type in Fandom Name">
                         </div>
 
-                        <label for="description">Reason for Joining:</label>
-                        <textarea class="inputy" id="description" name="description" rows="4" maxlength="500"
-                            placeholder="Why do you want to apply?"></textarea>
-                        
-                        <input type="submit" value="Submit" class="buttonr"
-                    onclick="return confirm('Are you sure you want to submit?');">
+                        <div class="form-content">
+                            <label for="description">Fandom Description:</label>
+                            <textarea class="inputy" id="description" name="description" rows="4" maxlength="500"
+                                placeholder="Type in Fandom Description"></textarea>
+                        </div>
+
+                        <button type="submit" class="small-button">
+                            Submit
+                        </button>
                     </form>
                 </div>
-    </div>
+            </div>
 
-    <footer id="footer-container">
-        <div class="footer">
-            <div class="footer-heading a">
-            </div>
-            <div class="footer-heading b">
-                <p><a href="../home.html">
-                        <img class="favicon" src="../images/favicon.gif" alt="favicon">
-                    </a></p>
-            </div>
-            <div class="footer-heading c">
-                <a href="sourcesAndSocials.html">Sources and Socials</a>
-                <a href=" howToFandom.html">How to Fandom</a>
-                <a href=" completeList.html">Complete List</a>
-                <a class="clickeeth" href="">Suggestion Box</a>
-            </div>
-        </div>
-    </footer>
+            <footer id="footer-container">
+                <div class="footer">
+                    <div class="footer-heading a">
+                    </div>
+                    <div class="footer-heading b">
+                        <p><a href="../home.html">
+                                <img class="favicon" src="../images/favicon.gif" alt="favicon">
+                            </a></p>
+                    </div>
+                    <div class="footer-heading c">
+                        <a href="sourcesAndSocials.html">Sources and Socials</a>
+                        <a href=" howToFandom.html">How to Fandom</a>
+                        <a href=" completeList.html">Complete List</a>
+                        <a class="clickeeth" href="">Suggestion Box</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- cloud storage -->
+            <script type="module">
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+                import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
+                const firebaseConfig = {
+                    apiKey: "AIzaSyCY9gcgkSC6_PrS2WLWX_PipjTyAt-vHNA",
+                    authDomain: "fandom-suggestion-box.firebaseapp.com",
+                    projectId: "fandom-suggestion-box",
+                    storageBucket: "fandom-suggestion-box.firebasestorage.app",
+                    messagingSenderId: "1021637275253",
+                    appId: "1:1021637275253:web:fc9bf456512efbee51123c"
+                };
+
+                const app = initializeApp(firebaseConfig);
+                const db = getFirestore(app);
+
+                const form = document.getElementById("suggestionForm");
+
+                form.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+
+                    const username = document.getElementById("username").value;
+                    const fandom = document.getElementById("fname").value;
+                    const description = document.getElementById("description").value;
+
+                    await addDoc(collection(db, "suggestions"), {
+                        username: username,
+                        fandom: fandom,
+                        description: description,
+                        timestamp: new Date()
+                    });
+
+                    alert("Suggestion submitted!");
+                    form.reset();
+                });
+            </script>
 </body>
 
 </html>

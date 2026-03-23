@@ -36,26 +36,14 @@
         min-height: 100%;
     }
 
-    #main {
-        height: 100vh;
-        overflow: hidden;
-        padding-bottom: 7rem;
-
-    }
 
     h1 {
-        font-size: 110px;
-        margin-top: 2rem;
+        font-size: 100px;
         color: #8b87f2;
         font-family: 'Work Sans';
         text-shadow: -.030em .030em #b4baed, -.08em .08em #dbd7e7;
         font-weight: 1000;
         text-align: center;
-    }
-
-    h2 {
-        font-family: 'Work Sans';
-        color: #8b87f2;
     }
 
     p {
@@ -79,76 +67,18 @@
         height: calc(100vh - 20rem);
     }
 
-    .pageList {
-        display: flex;
-        width: 80em;
-        height: 30em;
-        padding: 1.5rem;
-        border-radius: 5%;
-        backdrop-filter: blur(8px);
-        align-items: flex-start;
-        justify-content: space-around;
-        overflow-y: auto;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    }
-
-    .sourceList {
-        display: flex;
-        width: 75em;
-        height: 20em;
-        padding: 1.5rem;
-        border-radius: 5%;
-        backdrop-filter: blur(8px);
-        align-items: flex-start;
-        justify-content: space-around;
-        overflow-y: auto;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    }
-
     .page-Set {
         display: flex;
         flex-direction: column;
         line-height: 2.1em;
         font-size: 22px;
-
         max-height: 21em;
-    }
-
-    .formy {
-        width: min(90vw, 800px);
-        height: auto;
-        max-height: 60vh;
-        padding: 1.5rem;
-        border-radius: 24px;
-        backdrop-filter: blur(10px);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-        overflow-y: auto;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     p {
         font-family: 'Montserrat';
     }
 
-    .pageList a {
-        color: #57559c;
-        font-family: 'Montserrat';
-        font-size: 1rem;
-    }
-
-    .sourceList a {
-        color: #57559c;
-        font-family: 'Montserrat';
-        font-size: 1rem;
-    }
-
-    .pageList a:hover {
-        color: #1c0b2c;
-        font-weight: bolder;
-    }
 
     .flex-domain2 {
         display: flex;
@@ -157,7 +87,6 @@
     }
 
     .fandomExplain {
-        font-family: 'Montserrat';
         display: flex;
         backdrop-filter: blur(8px);
         padding: 3rem;
@@ -169,19 +98,103 @@
         flex-wrap: wrap;
         overflow-y: auto;
         border-radius: 5%;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
-    @media screen and (max-width: 728px) {
-        .sourceList {
-            flex-direction: column;
-        }
+    .heroVideoMobile {
+        display: none;
+    }
 
-        h1 {
+    .hero-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -67;
+        object-fit: cover;
+    }
+
+    .hero-head h1 {
+        font-size: 100px;
+        color: #8b87f2;
+        font-family: 'Work Sans';
+        text-shadow: -.030em .030em #b4baed, -.08em .08em #dbd7e7;
+        font-weight: 1000;
+    }
+
+    .hero-body {
+        margin-top: -250px;
+    }
+
+    .heroBodyContainer {
+        margin-left: 30%;
+        width: 40%;
+        background: rgba(218, 180, 232, 0.05);
+        backdrop-filter: blur(8px);
+        padding: 2rem 3rem;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(240, 242, 252, 0.05);
+        gap: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #footer-housing {
+        background-color: rgb(212, 198, 250);
+        position: fixed;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 6rem;
+        width: min(95vw, 900px);
+        border-radius: 14px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 0.8rem;
+        z-index: 10;
+    }
+
+    .favispin {
+        width: 80px;
+        height: auto;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .hero-head h1 {
             font-size: 50px;
         }
 
-        .pageList {
-            flex-direction: column;
+        .heroVideoDesktop {
+            display: none;
+        }
+
+        .heroVideoMobile {
+            display: block;
+        }
+
+        .hero-video {
+            display: inline !important;
+        }
+
+        .hero-head h1 {
+            font-size: 60px;
+        }
+
+        #footer-housing {
+            height: 12rem;
+        }
+
+        .favispin {
+            top: -60px;
+            width: 65px;
         }
     }
