@@ -169,10 +169,6 @@
 
     @media screen and (max-width: 768px) {
 
-        .hero-head h1 {
-            font-size: 50px;
-        }
-
         .heroVideoDesktop {
             display: none;
         }
@@ -186,7 +182,7 @@
         }
 
         .hero-head h1 {
-            font-size: 60px;
+            font-size: 80px;
         }
 
         #footer-housing {
