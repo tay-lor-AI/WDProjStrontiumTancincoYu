@@ -189,7 +189,25 @@
         transition: 0.25s;
     }
 
+    .flex-domain-linkies a {
+        display: block;
+        padding: 10px 14px;
+        border-radius: 8px;
+        color: #57559c;
+        font-family: 'Montserrat';
+        font-size: 14px;
+
+        background: rgba(255, 255, 255, 0.05);
+        transition: 0.25s;
+    }
+
     .pageList a:hover {
+        background: #8b87f2;
+        color: white;
+        transform: translateY(-3px);
+    }
+
+    .flex-domain-linkies a:hover {
         background: #8b87f2;
         color: white;
         transform: translateY(-3px);
